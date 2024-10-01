@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial {
+    background: #e8f5e9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex;
+    align-items: center; 
+}
+
+.profile-pic {
+    width: 50px; 
+    height: 50px;
+    border-radius: 50%; 
+    margin-right: 15px; 
+}
+
+.quote {
+    font-style: italic;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.author {
+    text-align: right;
+    font-weight: bold;
+    color: #666;
+}
+
+#t1 {
+    background: #c1e0c3; 
+}
+
+#t2 {
+    background: #eecdd2; 
+}
+
+#t3 {
+    background: #c3d6e4; 
+}
+
+#t4 {
+    background: #ecdec7; 
+}
+
+#t5 {
+    background: #cfe6f0; 
+}
+
+
+@media (max-width: 650px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+    </style>
+    <title>Testimonials</title>
+</head>
+<body>
+    <div class="container">
+        <div class="testimonial" id="t1">
+            <img src="image-daniel.jpg" alt="Profile of Daniel Clifford" class="profile-pic">
+            <p class="quote">"I received a job offer mid-course, and the subjects I learned were current, if not more so, in the company I joined. I honestly feel I got every penny's worth."</p>
+            <p class="author">- Daniel Clifford, Verified Student</p>
+        </div>
+
+        <div class="testimonial" id="t2">
+            <img src="image-jonathan.jpg" alt="Profile of Jonathan Walters" class="profile-pic">
+            <p class="quote">"The team was very supportive and kept me motivated."</p>
+            <p class="author">- Jonathan Walters, Verified Student</p>
+        </div>
+
+        <div class="testimonial" id="t3">
+            <img src="image-jeanette.jpg" alt="Profile of Jeanette Harmon" class="profile-pic">
+            <p class="quote">"An overall wonderful and rewarding experience."</p>
+            <p class="author">- Jeanette Harmon, Verified Student</p>
+        </div>
+
+        <div class="testimonial" id="t4">
+            <img src="image-patrick.jpg" alt="Profile of Patrick Abrams" class="profile-pic">
+            <p class="quote">"Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and learning from their experiences was easy."</p>
+            <p class="author">- Patrick Abrams, Verified Student</p>
+        </div>
+
+        <div class="testimonial" id="t5">
+            <img src="image-.jpg" alt="Profile of Kira Whittle" class="profile-pic">
+            <p class="quote">"Such a life-changing experience. Highly recommended!"</p>
+            <p class="author">- Kira Whittle, Verified Student</p>
+        </div>
+    </div>
+</body>
+</html>
